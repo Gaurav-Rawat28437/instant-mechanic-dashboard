@@ -8,9 +8,9 @@ import bookingRoutes from "./routes/bookingRoutes.js";
 import mechanicRoutes from "./routes/mechanicRoutes.js";
 import customerRoutes from "./routes/customerRoutes.js";
 
+const app = express();
 app.set("trust proxy", 1);
 
-const app = express();
 
 app.use(cors({
   origin: process.env.FRONTEND_URL,
