@@ -42,7 +42,7 @@ export async function login(req, res) {
       }
     );
 
-    // IMPORTANT: use cookieOptions()
+    
     res.cookie("token", token, cookieOptions());
 
     return res.status(200).json({
