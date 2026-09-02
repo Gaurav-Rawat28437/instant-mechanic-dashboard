@@ -8,6 +8,8 @@ import bookingRoutes from "./routes/bookingRoutes.js";
 import mechanicRoutes from "./routes/mechanicRoutes.js";
 import customerRoutes from "./routes/customerRoutes.js";
 
+app.set("trust proxy", 1);
+
 const app = express();
 
 app.use(cors({
